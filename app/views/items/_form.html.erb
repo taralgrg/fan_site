@@ -1,0 +1,11 @@
+<%= render "layouts/errors", :object => @list %>
+
+<%= form_for @item do |f| %>
+<%= f.label :username %>
+<%= f.text_field :username %>
+<%= f.label :link %>
+<%= f.text_field :link %>
+<%= f.label :description %>
+<%= f.text_field :description %>
+  <%= f.submit %>
+<% end %>

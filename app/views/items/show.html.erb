@@ -1,0 +1,12 @@
+<p1>Username: <%= @item.username %>
+  <br /> Link url: <%= @item.link %>
+ <br /> Description: <%= @item.description %>
+</p1>
+
+<p><%= link_to "Edit", edit_item_path(@item) %></p>
+<p><%= link_to "Delete", item_path(@item),
+                         :data => {:confirm => "You sure?",
+                                   :method => "delete"} %></p>
+
+
+  <p><%= link_to "Return to Items", items_path %></p>
